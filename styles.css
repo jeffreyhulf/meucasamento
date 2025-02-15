@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.1);  /* Ajusta a opacidade da camada */
+    z-index: -1;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg'); 
+    background-size: cover; 
+    background-position: center center; 
+    background-attachment: fixed; 
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3, p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    color: #000000;
+}
+
+/* Estilo do cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+header h1, header p {
+    font-family: 'Dancing Script', cursive;
+    color: #cd4244;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); 
+}
+
+header h1 {
+    font-size: 4em;
+    margin: 0;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 2em;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+/* Estilo do cronômetro */
+.cronometro h2 {
+    font-family: 'Dancing Script', cursive;
+    color: #cd4244;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    font-size: 1em;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 10px; 
+}
+
+.cronometro {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+#cronometro {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #cd4244;
+    margin-top: 10px;
+}
+
+#cronometro span {
+    padding: 0 8px;
+}
+
+#dias, #horas, #minutos, #segundos {
+    font-size: 1.3em;
+}
+
+.fotos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.fotos img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    max-height: 400px;
+
+    border: 10px solid white;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); 
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.fotos img::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    background-color: white;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.nosso-amor {
+    text-align: center;
+    font-size: 2.5em;
+    color: #cd4244;
+    margin-top: 30px;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9em;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 10px;
+    color: #777;
+}
